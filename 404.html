@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <meta name="robots" content="noindex">
+  <script>
+    (function() {
+      var newOrigin = 'https://fuzzingbrain.github.io';
+      var target = newOrigin + window.location.pathname + window.location.search + window.location.hash;
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <p>This page has moved. If you are not redirected, go to <a id="fallback" href="https://fuzzingbrain.github.io/">fuzzingbrain.github.io</a>.</p>
+  <script>
+    (function() {
+      var target = 'https://fuzzingbrain.github.io' + window.location.pathname + window.location.search + window.location.hash;
+      var a = document.getElementById('fallback');
+      if (a) a.href = target;
+    })();
+  </script>
+</body>
+</html>
